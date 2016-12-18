@@ -1,0 +1,103 @@
+/*sass variables*/
+
+$indent-margin: 6rem;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+        }
+
+
+
+body{
+  width:100%;
+
+  font-size: 16px;
+  font-family: 'Julius Sans One', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+figure{
+  background: url('../images/Bakgrund.jpg');
+  height:100vh;
+  min-height: 855px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin:0;
+  padding:0;
+}
+main{
+  height:inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+  margin-right:6rem;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  top:0;
+  width: 100%;
+
+  height: 10rem;
+
+}
+nav{
+  width:50%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+
+}
+
+.heroarticle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include border-radius(50%);
+  width:20rem;
+  height:20rem;
+  border: 4px solid white;
+  color:white;
+  transition:all 1s ease;
+  &:hover{
+    background: white;
+    color:red;
+  }
+}
+
+
+/* typography*/
+a{
+  text-decoration: none;
+  color:white;
+  transition: all 1s ease;
+  &:hover{
+    color:green;
+  }
+}
+h1{
+  font-size: 2rem;
+  transition: all 1s ease;
+  &:hover{
+    color:green;
+  }
+}
+.title{
+  font-size: 2rem;
+
+}
+.transparent{
+  color:white;
+}
