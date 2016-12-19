@@ -6,28 +6,29 @@ body {
   margin: 0;
   padding: 0; }
 
-figure {
+.background {
   background: url("../images/Bakgrund.jpg");
-  height: 100vh;
+  height: 2000px;
   min-height: 855px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: 100%;
   margin: 0;
   padding: 0; }
 
 main {
-  height: inherit;
-  width: 100%;
+  height: 100%;
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 6rem;
-  margin-right: 6rem; }
+  margin: 0;
+  border: 2px solid white;
+  padding: 0; }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
@@ -44,21 +45,31 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
   width: 20rem;
   height: 20rem;
   border: 4px solid white;
   color: white;
+  margin-top: 10em; }
+
+.art1 {
   transition: all 1s ease; }
-  .heroarticle:hover {
+  .art1:hover {
     background: white;
-    color: red; }
+    color: red;
+    border-radius: 50%;
+    transform: rotate(360deg); }
+
+.art2:hover {
+  transform: translate(20px, 20px);
+  transition: all 1s ease; }
 
 /* typography*/
 a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
   transition: all 1s ease; }
@@ -73,8 +84,20 @@ h1 {
 
 .title {
   font-size: 2rem; }
+  .title:active {
+    background: white;
+    border-radius: 50%; }
 
 .transparent {
   color: white; }
+
+.lada {
+  height: 200px;
+  width: 200px;
+  background: white; }
+  .lada:hover {
+    transform: rotate(30deg);
+    border-radius: 50%;
+    transition: all 1s ease; }
 
 /*# sourceMappingURL=main.css.map */
